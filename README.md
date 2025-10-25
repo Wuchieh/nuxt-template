@@ -37,4 +37,5 @@ pnpm preview
 - Nuxt 4
 - Pinia
 - Unocss
+- Vuetify
 - @nuxtjs/i18n
