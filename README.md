@@ -38,4 +38,3 @@ pnpm preview
 - Pinia
 - Unocss
 - @nuxtjs/i18n
-
