@@ -35,6 +35,7 @@ pnpm preview
 ## Stack
 
 - Nuxt 4
+- Wrangler
 - Pinia
 - Unocss
 - @nuxtjs/i18n
