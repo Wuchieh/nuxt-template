@@ -1,5 +1,3 @@
-import { cloneDeep } from 'lodash-es';
-
 /**
  * 創建一個長按事件處理器
  * @function useLongTouch

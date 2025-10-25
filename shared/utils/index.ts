@@ -119,10 +119,6 @@ export class TaskQueue {
     }
 }
 
-export function createObjectURL(file?: Blob | MediaSource) {
-    return file ? URL.createObjectURL(file) : void 0;
-}
-
 export function debounceFunc<T extends unknown[]>(
     func: (...args: T) => void,
     duration: number = 500,
