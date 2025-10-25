@@ -26,12 +26,12 @@
         </div>
         <div>
             <div>
-                <button
+                <v-btn
                     class="add-count-btn"
                     @click="app.count++"
                 >
                     Add Count
-                </button>
+                </v-btn>
             </div>
             <div>
                 count:{{ app.count }}

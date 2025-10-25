@@ -1,8 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    build: { transpile: ['vuetify'] },
+
     compatibilityDate: '2025-10-25',
 
     devtools: { enabled: false },
+
+    // when enabling ssr option you need to disable inlineStyles and maybe devLogs
+    features: {
+        devLogs: false,
+        inlineStyles: false,
+    },
 
     i18n: {
         defaultLocale: 'zh-TW',
@@ -25,6 +33,8 @@ export default defineNuxtConfig({
     },
 
     modules: [
+        '@nuxt/fonts',
+        'vuetify-nuxt-module',
         '@nuxtjs/i18n',
         '@unocss/nuxt',
         '@pinia/nuxt',
@@ -47,4 +57,23 @@ export default defineNuxtConfig({
     },
 
     unocss: { nuxtLayers: true },
+
+    vite: { ssr: { noExternal: ['vuetify'] } },
+
+    vuetify: {
+        moduleOptions: {
+            // check https://nuxt.vuetifyjs.com/guide/server-side-rendering.html
+            ssrClientHints: {
+                prefersColorScheme: false,
+                prefersColorSchemeOptions: { useBrowserThemeOnly: false },
+                reloadOnFirstRequest: false,
+
+                viewportSize: true,
+            },
+
+            // /* If customizing sass global variables ($utilities, $reset, $color-pack, $body-font-family, etc) */
+            // disableVuetifyStyles: true,
+            styles: { configFile: 'assets/vuetify/settings.scss' },
+        },
+    },
 });
