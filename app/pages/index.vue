@@ -27,7 +27,7 @@
         <div>
             <div>
                 <button
-                    class="bg-blue-6 color-white h-40px cursor-pointer rounded border-none p-2"
+                    class="add-count-btn"
                     @click="app.count++"
                 >
                     Add Count
@@ -47,5 +47,7 @@ definePageMeta({ name: 'index' });
 </script>
 
 <style scoped lang="scss">
-
+.add-count-btn{
+    @apply bg-blue-6 color-white h-40px cursor-pointer rounded border-none p-2
+}
 </style>
