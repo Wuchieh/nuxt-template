@@ -6,11 +6,13 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
+    "preview": "npm run build && wrangler pages dev",
     "postinstall": "nuxt prepare",
     "typecheck": "nuxt typecheck",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "deploy": "npm run build && wrangler pages deploy",
+    "cf-typegen": "wrangler types"
   },
   "dependencies": {
     "@nuxtjs/i18n": "10.1.1",
@@ -27,13 +29,17 @@
     "@unocss/nuxt": "^66.5.4",
     "@unocss/transformer-directives": "^66.5.4",
     "eslint": "^9.38.0",
+    "nitro-cloudflare-dev": "^0.2.2",
     "postcss-pxtorem": "^6.1.0",
-    "unocss": "^66.5.4"
+    "unocss": "^66.5.4",
+    "wrangler": "^4.45.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
       "@parcel/watcher",
-      "esbuild"
+      "esbuild",
+      "sharp",
+      "workerd"
     ]
   }
 }

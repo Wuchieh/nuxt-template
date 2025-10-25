@@ -1,4 +1,9 @@
 {
+  "compilerOptions": {
+    "types": [
+      "./worker-configuration.d.ts"
+    ]
+  },
   "references": [
     {
       "path": "./.nuxt/tsconfig.app.json"

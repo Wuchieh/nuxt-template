@@ -25,10 +25,20 @@ export default defineNuxtConfig({
     },
 
     modules: [
+        'nitro-cloudflare-dev',
         '@nuxtjs/i18n',
         '@unocss/nuxt',
         '@pinia/nuxt',
     ],
+
+    nitro: {
+        cloudflare: {
+            deployConfig: true,
+            nodeCompat: true,
+        },
+
+        preset: 'cloudflare-pages',
+    },
 
     pinia: { storesDirs: ['./app/stores/**'] },
 
