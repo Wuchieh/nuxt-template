@@ -21,7 +21,7 @@
     "pinia": "^3.0.4",
     "vue": "^3.5.26",
     "vue-router": "^4.6.4",
-    "vuetify": "^3.9.1"
+    "vuetify": "^3.11.6"
   },
   "devDependencies": {
     "@iconify/utils": "^3.1.0",
@@ -34,7 +34,7 @@
     "postcss-pxtorem": "^6.1.0",
     "sass-embedded": "^1.97.2",
     "unocss": "^66.6.0",
-    "vuetify-nuxt-module": "^0.18.7"
+    "vuetify-nuxt-module": "^0.18.9"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
