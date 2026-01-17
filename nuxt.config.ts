@@ -40,8 +40,6 @@ export default defineNuxtConfig({
         '@pinia/nuxt',
     ],
 
-    pinia: { storesDirs: ['./app/stores/**'] },
-
     postcss: {
         plugins: {
             'cssnano': {},
