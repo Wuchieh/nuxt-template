@@ -40,8 +40,6 @@ export default defineNuxtConfig({
         preset: 'cloudflare-pages',
     },
 
-    pinia: { storesDirs: ['./app/stores/**'] },
-
     postcss: {
         plugins: {
             'cssnano': {},
