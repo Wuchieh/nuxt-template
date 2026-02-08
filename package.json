@@ -16,12 +16,12 @@
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
-    "@nuxtjs/i18n": "^10.2.1",
+    "@nuxtjs/i18n": "^10.2.3",
     "@pinia/nuxt": "^0.11.3",
     "crypto-es": "^3.1.2",
-    "nuxt": "^4.2.2",
+    "nuxt": "^4.3.1",
     "pinia": "^3.0.4",
-    "vue": "^3.5.26",
+    "vue": "^3.5.27",
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
@@ -32,7 +32,7 @@
     "eslint": "^9.39.2",
     "nitro-cloudflare-dev": "^0.2.2",
     "postcss-pxtorem": "^6.1.0",
-    "sass-embedded": "^1.97.2",
+    "sass-embedded": "^1.97.3",
     "unocss": "^66.6.0",
     "wrangler": "^4.59.2"
   },
