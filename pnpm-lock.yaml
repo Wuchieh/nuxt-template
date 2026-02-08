@@ -30,8 +30,8 @@ importers:
         specifier: ^4.6.4
         version: 4.6.4(vue@3.5.27(typescript@5.9.3))
       vuetify:
-        specifier: ^3.11.6
-        version: 3.11.6(typescript@5.9.3)(vite-plugin-vuetify@2.1.2)(vue@3.5.26(typescript@5.9.3))
+        specifier: ^3.11.8
+        version: 3.11.8(typescript@5.9.3)(vite-plugin-vuetify@2.1.3)(vue@3.5.27(typescript@5.9.3))
     devDependencies:
       '@iconify/utils':
         specifier: ^3.1.0
@@ -44,7 +44,7 @@ importers:
         version: 7.4.47
       '@nuxt/fonts':
         specifier: ^0.11.4
-        version: 0.11.4(db0@0.3.4)(ioredis@5.9.2)(magicast@0.5.1)(vite@7.3.1(@types/node@25.0.9)(jiti@2.6.1)(sass-embedded@1.97.2)(sass@1.97.2)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))
+        version: 0.11.4(db0@0.3.4)(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(sass-embedded@1.97.3)(sass@1.97.3)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))
       '@unocss/nuxt':
         specifier: ^66.6.0
         version: 66.6.0(magicast@0.5.2)(postcss@8.5.6)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(sass-embedded@1.97.3)(sass@1.97.3)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(webpack@5.102.1(esbuild@0.23.1))
@@ -65,7 +65,7 @@ importers:
         version: 66.6.0(@unocss/webpack@66.6.0(webpack@5.102.1(esbuild@0.23.1)))(postcss@8.5.6)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(sass-embedded@1.97.3)(sass@1.97.3)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))
       vuetify-nuxt-module:
         specifier: ^0.18.9
-        version: 0.18.9(magicast@0.5.1)(typescript@5.9.3)(vite@7.3.1(@types/node@25.0.9)(jiti@2.6.1)(sass-embedded@1.97.2)(sass@1.97.2)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue@3.5.26(typescript@5.9.3))
+        version: 0.18.9(magicast@0.5.2)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(sass-embedded@1.97.3)(sass@1.97.3)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue@3.5.27(typescript@5.9.3))
 
 packages:
 
@@ -1068,6 +1068,10 @@ packages:
 
   '@nuxt/fonts@0.11.4':
     resolution: {integrity: sha512-GbLavsC+9FejVwY+KU4/wonJsKhcwOZx/eo4EuV57C4osnF/AtEmev8xqI0DNlebMEhEGZbu1MGwDDDYbeR7Bw==}
+
+  '@nuxt/kit@3.21.1':
+    resolution: {integrity: sha512-QORZRjcuTKgo++XP1Pc2c2gqwRydkaExrIRfRI9vFsPA3AzuHVn5Gfmbv1ic8y34e78mr5DMBvJlelUaeOuajg==}
+    engines: {node: '>=18.12.0'}
 
   '@nuxt/kit@4.3.1':
     resolution: {integrity: sha512-UjBFt72dnpc+83BV3OIbCT0YHLevJtgJCHpxMX0YRKWLDhhbcDdUse87GtsQBrjvOzK7WUNUYLDS/hQLYev5rA==}
@@ -2307,11 +2311,11 @@ packages:
   '@vue/shared@3.5.27':
     resolution: {integrity: sha512-dXr/3CgqXsJkZ0n9F3I4elY8wM9jMJpP3pvRG52r6m0tu/MsAFIe6JpXVGeNMd/D9F4hQynWT8Rfuj0bdm9kFQ==}
 
-  '@vuetify/loader-shared@2.1.1':
-    resolution: {integrity: sha512-jSZTzTYaoiv8iwonFCVZQ0YYX/M+Uyl4ng+C4egMJT0Hcmh9gIxJL89qfZICDeo3g0IhqrvipW2FFKKRDMtVcA==}
+  '@vuetify/loader-shared@2.1.2':
+    resolution: {integrity: sha512-X+1jBLmXHkpQEnC0vyOb4rtX2QSkBiFhaFXz8yhQqN2A4vQ6k2nChxN4Ol7VAY5KoqMdFoRMnmNdp/1qYXDQig==}
     peerDependencies:
       vue: ^3.0.0
-      vuetify: ^3.0.0
+      vuetify: '>=3'
 
   '@webassemblyjs/ast@1.14.1':
     resolution: {integrity: sha512-nuBEDgQfm1ccRp/8bCQrx1frohyufl4JlbMMZ4P1wpeOfDhF6FQkxZJ1b/e+PLwr6X1Nhw6OLme5usuBWYBvuQ==}
@@ -5483,13 +5487,13 @@ packages:
       vite: ^6.0.0 || ^7.0.0
       vue: ^3.5.0
 
-  vite-plugin-vuetify@2.1.2:
-    resolution: {integrity: sha512-I/wd6QS+DO6lHmuGoi1UTyvvBTQ2KDzQZ9oowJQEJ6OcjWfJnscYXx2ptm6S7fJSASuZT8jGRBL3LV4oS3LpaA==}
+  vite-plugin-vuetify@2.1.3:
+    resolution: {integrity: sha512-Q4SC/4TqbNvaZIFb9YsfBqkGlYHbJJJ6uU3CnRBZqLUF3s5eCMVZAaV4GkTbehIH/bhSj42lMXztOwc71u6rVw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       vite: '>=5'
       vue: ^3.0.0
-      vuetify: ^3.0.0
+      vuetify: '>=3'
 
   vite@7.3.1:
     resolution: {integrity: sha512-w+N7Hifpc3gRjZ63vYBXA56dvvRlNWRczTdmCBBa+CotUzAPf5b7YMdMR/8CQoeYE5LX3W4wj6RYTgonm1b9DA==}
@@ -5571,8 +5575,8 @@ packages:
   vuetify-nuxt-module@0.18.9:
     resolution: {integrity: sha512-jr+Hujsw5U465LKJD1/SQgqJIXuJNbXM0HOp9vPmtPFPlGFwZ4kb1YfUPNmuCEDaSIY6rkb7+W+FEJvt9PQELQ==}
 
-  vuetify@3.11.6:
-    resolution: {integrity: sha512-vaWvEpDSeldRoib1tCKNVBp60paTD2/n0a0TmrVLF9BN4CJJn6/A4VKG2Sg+DE8Yc+SNOtFtipChxSlQxjcUvw==}
+  vuetify@3.11.8:
+    resolution: {integrity: sha512-4iKnntOnLFFklygZjzlVfcHrtLO8+iK4HOhiia6HP2U8v82x+ngaSCgm+epvPrGyCMfCpfuEttqD2qElrr1axw==}
     peerDependencies:
       typescript: '>=4.7'
       vite-plugin-vuetify: '>=2.1.0'
@@ -6606,15 +6610,15 @@ snapshots:
 
   '@nuxt/devalue@2.0.2': {}
 
-  '@nuxt/devtools-kit@2.7.0(magicast@0.5.1)(vite@7.3.1(@types/node@25.0.9)(jiti@2.6.1)(sass-embedded@1.97.2)(sass@1.97.2)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))':
+  '@nuxt/devtools-kit@2.7.0(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(sass-embedded@1.97.3)(sass@1.97.3)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))':
     dependencies:
-      '@nuxt/kit': 3.20.2(magicast@0.5.2)
+      '@nuxt/kit': 3.21.1(magicast@0.5.2)
       execa: 8.0.1
       vite: 7.3.1(@types/node@25.2.2)(jiti@2.6.1)(sass-embedded@1.97.3)(sass@1.97.3)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2)
     transitivePeerDependencies:
       - magicast
 
-  '@nuxt/devtools-kit@3.1.1(magicast@0.5.1)(vite@7.3.1(@types/node@25.0.9)(jiti@2.6.1)(sass-embedded@1.97.2)(sass@1.97.2)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))':
+  '@nuxt/devtools-kit@3.1.1(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(sass-embedded@1.97.3)(sass@1.97.3)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))':
     dependencies:
       '@nuxt/kit': 4.3.1(magicast@0.5.2)
       execa: 8.0.1
@@ -6674,10 +6678,10 @@ snapshots:
       - utf-8-validate
       - vue
 
-  '@nuxt/fonts@0.11.4(db0@0.3.4)(ioredis@5.9.2)(magicast@0.5.1)(vite@7.3.1(@types/node@25.0.9)(jiti@2.6.1)(sass-embedded@1.97.2)(sass@1.97.2)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))':
+  '@nuxt/fonts@0.11.4(db0@0.3.4)(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(sass-embedded@1.97.3)(sass@1.97.3)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))':
     dependencies:
-      '@nuxt/devtools-kit': 2.7.0(magicast@0.5.1)(vite@7.3.1(@types/node@25.0.9)(jiti@2.6.1)(sass-embedded@1.97.2)(sass@1.97.2)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))
-      '@nuxt/kit': 3.20.2(magicast@0.5.1)
+      '@nuxt/devtools-kit': 2.7.0(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(sass-embedded@1.97.3)(sass@1.97.3)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))
+      '@nuxt/kit': 3.21.1(magicast@0.5.2)
       consola: 3.4.2
       css-tree: 3.1.0
       defu: 6.1.4
@@ -6719,6 +6723,32 @@ snapshots:
       - magicast
       - uploadthing
       - vite
+
+  '@nuxt/kit@3.21.1(magicast@0.5.2)':
+    dependencies:
+      c12: 3.3.3(magicast@0.5.2)
+      consola: 3.4.2
+      defu: 6.1.4
+      destr: 2.0.5
+      errx: 0.1.0
+      exsolve: 1.0.8
+      ignore: 7.0.5
+      jiti: 2.6.1
+      klona: 2.0.6
+      knitwork: 1.3.0
+      mlly: 1.8.0
+      ohash: 2.0.11
+      pathe: 2.0.3
+      pkg-types: 2.3.0
+      rc9: 3.0.0
+      scule: 1.3.0
+      semver: 7.7.4
+      tinyglobby: 0.2.15
+      ufo: 1.6.3
+      unctx: 2.5.0
+      untyped: 2.0.0
+    transitivePeerDependencies:
+      - magicast
 
   '@nuxt/kit@4.3.1(magicast@0.5.2)':
     dependencies:
@@ -8016,11 +8046,11 @@ snapshots:
 
   '@vue/shared@3.5.27': {}
 
-  '@vuetify/loader-shared@2.1.1(vue@3.5.26(typescript@5.9.3))(vuetify@3.11.6)':
+  '@vuetify/loader-shared@2.1.2(vue@3.5.27(typescript@5.9.3))(vuetify@3.11.8)':
     dependencies:
       upath: 2.0.1
-      vue: 3.5.26(typescript@5.9.3)
-      vuetify: 3.11.6(typescript@5.9.3)(vite-plugin-vuetify@2.1.2)(vue@3.5.26(typescript@5.9.3))
+      vue: 3.5.27(typescript@5.9.3)
+      vuetify: 3.11.8(typescript@5.9.3)(vite-plugin-vuetify@2.1.3)(vue@3.5.27(typescript@5.9.3))
 
   '@webassemblyjs/ast@1.14.1':
     dependencies:
@@ -11398,8 +11428,8 @@ snapshots:
 
   tsx@4.21.0:
     dependencies:
-      esbuild: 0.27.2
-      get-tsconfig: 4.13.0
+      esbuild: 0.27.3
+      get-tsconfig: 4.13.6
     optionalDependencies:
       fsevents: 2.3.3
 
@@ -11743,18 +11773,18 @@ snapshots:
       vite: 7.3.1(@types/node@25.2.2)(jiti@2.6.1)(sass-embedded@1.97.3)(sass@1.97.3)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2)
       vue: 3.5.27(typescript@5.9.3)
 
-  vite-plugin-vuetify@2.1.2(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(sass-embedded@1.97.3)(sass@1.97.3)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue@3.5.26(typescript@5.9.3))(vuetify@3.11.6):
+  vite-plugin-vuetify@2.1.3(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(sass-embedded@1.97.3)(sass@1.97.3)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue@3.5.27(typescript@5.9.3))(vuetify@3.11.8):
     dependencies:
-      '@vuetify/loader-shared': 2.1.1(vue@3.5.26(typescript@5.9.3))(vuetify@3.11.6)
+      '@vuetify/loader-shared': 2.1.2(vue@3.5.27(typescript@5.9.3))(vuetify@3.11.8)
       debug: 4.4.3
       upath: 2.0.1
-      vite: 7.3.1(@types/node@25.0.9)(jiti@2.6.1)(sass-embedded@1.97.2)(sass@1.97.2)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2)
-      vue: 3.5.26(typescript@5.9.3)
-      vuetify: 3.11.6(typescript@5.9.3)(vite-plugin-vuetify@2.1.2)(vue@3.5.26(typescript@5.9.3))
+      vite: 7.3.1(@types/node@25.2.2)(jiti@2.6.1)(sass-embedded@1.97.3)(sass@1.97.3)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2)
+      vue: 3.5.27(typescript@5.9.3)
+      vuetify: 3.11.8(typescript@5.9.3)(vite-plugin-vuetify@2.1.3)(vue@3.5.27(typescript@5.9.3))
     transitivePeerDependencies:
       - supports-color
 
-  vite@7.3.1(@types/node@25.0.9)(jiti@2.6.1)(sass-embedded@1.97.2)(sass@1.97.2)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2):
+  vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(sass-embedded@1.97.3)(sass@1.97.3)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2):
     dependencies:
       esbuild: 0.27.3
       fdir: 6.5.0(picomatch@4.0.3)
@@ -11816,9 +11846,9 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
-  vuetify-nuxt-module@0.18.9(magicast@0.5.1)(typescript@5.9.3)(vite@7.3.1(@types/node@25.0.9)(jiti@2.6.1)(sass-embedded@1.97.2)(sass@1.97.2)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue@3.5.26(typescript@5.9.3)):
+  vuetify-nuxt-module@0.18.9(magicast@0.5.2)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(sass-embedded@1.97.3)(sass@1.97.3)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue@3.5.27(typescript@5.9.3)):
     dependencies:
-      '@nuxt/kit': 3.20.2(magicast@0.5.1)
+      '@nuxt/kit': 3.21.1(magicast@0.5.2)
       defu: 6.1.4
       destr: 2.0.5
       local-pkg: 0.5.1
@@ -11827,8 +11857,8 @@ snapshots:
       ufo: 1.6.3
       unconfig: 0.5.5
       upath: 2.0.1
-      vite-plugin-vuetify: 2.1.2(vite@7.3.1(@types/node@25.0.9)(jiti@2.6.1)(sass-embedded@1.97.2)(sass@1.97.2)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue@3.5.26(typescript@5.9.3))(vuetify@3.11.6)
-      vuetify: 3.11.6(typescript@5.9.3)(vite-plugin-vuetify@2.1.2)(vue@3.5.26(typescript@5.9.3))
+      vite-plugin-vuetify: 2.1.3(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(sass-embedded@1.97.3)(sass@1.97.3)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue@3.5.27(typescript@5.9.3))(vuetify@3.11.8)
+      vuetify: 3.11.8(typescript@5.9.3)(vite-plugin-vuetify@2.1.3)(vue@3.5.27(typescript@5.9.3))
     transitivePeerDependencies:
       - magicast
       - supports-color
@@ -11837,12 +11867,12 @@ snapshots:
       - vue
       - webpack-plugin-vuetify
 
-  vuetify@3.11.6(typescript@5.9.3)(vite-plugin-vuetify@2.1.2)(vue@3.5.26(typescript@5.9.3)):
+  vuetify@3.11.8(typescript@5.9.3)(vite-plugin-vuetify@2.1.3)(vue@3.5.27(typescript@5.9.3)):
     dependencies:
-      vue: 3.5.26(typescript@5.9.3)
+      vue: 3.5.27(typescript@5.9.3)
     optionalDependencies:
       typescript: 5.9.3
-      vite-plugin-vuetify: 2.1.2(vite@7.3.1(@types/node@25.0.9)(jiti@2.6.1)(sass-embedded@1.97.2)(sass@1.97.2)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue@3.5.26(typescript@5.9.3))(vuetify@3.11.6)
+      vite-plugin-vuetify: 2.1.3(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(sass-embedded@1.97.3)(sass@1.97.3)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue@3.5.27(typescript@5.9.3))(vuetify@3.11.8)
 
   watchpack@2.5.1:
     dependencies:
