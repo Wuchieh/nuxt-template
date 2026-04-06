@@ -1,3 +1,55 @@
+import { cloneDeep } from 'es-toolkit';
+import type { Directive } from 'vue';
+
+function debounceRef<T = any>(value: T, duration: number = 500) {
+    return customRef<T>((track, trigger) => {
+        let timeout: any;
+        return {
+            get() {
+                track();
+                return value;
+            },
+            set(newValue) {
+                clearTimeout(timeout);
+                timeout = setTimeout(() => {
+                    value = newValue;
+                    trigger();
+                }, duration);
+            },
+        };
+    });
+}
+
+const createdLocalStorage = new Map<string, Ref>();
+
+function useLocalStorageRef<T extends string>(
+    key: string,
+    fallback?: T,
+): Ref<T> {
+    if (createdLocalStorage.has(key)) {
+        return createdLocalStorage.get(key) as Ref<T>;
+    }
+
+    const result = customRef<T>((track, trigger) => ({
+        get() {
+            track();
+            const value = localStorage.getItem(key);
+            return (value ?? fallback) as T;
+        },
+        set(value) {
+            if (value) {
+                localStorage.setItem(key, value);
+            } else {
+                localStorage.removeItem(key);
+            }
+            trigger();
+        },
+    }));
+
+    createdLocalStorage.set(key, result);
+    return result;
+}
+
 /**
  * 創建一個長按事件處理器
  * @function useLongTouch
@@ -51,7 +103,31 @@ function useResetRef<T = any>(value: T) {
     ] as const;
 }
 
+function vLongTouch(touchDuration: number = 300): Directive {
+    const vLongTouchMap = new WeakMap();
+
+    return {
+        mounted(el: HTMLElement, { value }: { value: (e: MouseEvent, ...args: any[]) => void }) {
+            const base = useLongTouch(value, touchDuration);
+            vLongTouchMap.set(el, base);
+            el.addEventListener('pointerdown', base.onPointerdown);
+            el.addEventListener('pointerout', base.onPointerout);
+            el.addEventListener('pointerup', base.onPointerup);
+        },
+        unmounted(el: HTMLElement) {
+            const base = vLongTouchMap.get(el);
+            el.removeEventListener('pointerdown', base.onPointerdown);
+            el.removeEventListener('pointerout', base.onPointerout);
+            el.removeEventListener('pointerup', base.onPointerup);
+            vLongTouchMap.delete(el);
+        },
+    };
+}
+
 export {
+    debounceRef,
+    useLocalStorageRef,
     useLongTouch,
     useResetRef,
+    vLongTouch,
 };
