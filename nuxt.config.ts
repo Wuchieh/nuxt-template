@@ -60,17 +60,15 @@ export default defineNuxtConfig({
 
     vuetify: {
         moduleOptions: {
-            // check https://nuxt.vuetifyjs.com/guide/server-side-rendering.html
             ssrClientHints: {
-                prefersColorScheme: false,
+                prefersColorScheme: true,
                 prefersColorSchemeOptions: { useBrowserThemeOnly: false },
+                prefersReducedMotion: true,
                 reloadOnFirstRequest: false,
 
                 viewportSize: true,
             },
 
-            // /* If customizing sass global variables ($utilities, $reset, $color-pack, $body-font-family, etc) */
-            // disableVuetifyStyles: true,
             styles: { configFile: 'assets/vuetify/settings.scss' },
         },
     },
