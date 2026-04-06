@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
     build: { transpile: ['vuetify'] },
 
-    compatibilityDate: '2025-10-25',
+    compatibilityDate: '2026-04-06',
 
     devtools: { enabled: false },
 
