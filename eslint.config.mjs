@@ -8,9 +8,9 @@ import { createVueConfig } from '@kikiutils/eslint-config/vue';
 export default antfu(
     {
         formatters: { css: true },
+        ignores: ['app/composables/swag/**/*'],
         typescript: true,
         vue: true,
-        ignores: ['app/composables/swag/**/*']
     },
     createBaseConfigs(),
     createStyleFilesConfigs(),
