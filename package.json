@@ -24,7 +24,7 @@
     "vue": "^3.5.32",
     "vue-router": "^5.0.4",
     "vuetify": "^4.0.5",
-    "vuetify-nuxt-module": "^1.0.0-beta.1"
+    "vuetify-nuxt-module": "1.0.0-beta.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^8.2.0",
@@ -33,21 +33,21 @@
     "@iconify/utils": "^3.1.0",
     "@kikiutils/eslint-config": "^9.0.0",
     "@kikiutils/eslint-plugin-vue": "^10.2.2",
-    "@nuxt/fonts": "^0.11.4",
+    "@nuxt/fonts": "^0.14.0",
     "@unocss/nuxt": "^66.6.8",
     "@unocss/transformer-directives": "^66.6.8",
     "@vue/language-core": "^3.2.6",
     "eslint": "^10.2.1",
+    "eslint-config-vuetify": "^4.6.0",
     "eslint-plugin-better-tailwindcss": "^4.4.1",
     "eslint-plugin-format": "^2.0.1",
-    "eslint-config-vuetify": "^4.3.4",
     "postcss-pxtorem": "^6.1.0",
     "sass-embedded": "^1.99.0",
     "tailwind-csstree": "^0.3.1",
     "tailwindcss": "^4.2.2",
     "unocss": "^66.6.8",
-    "vue-eslint-parser": "^10.4.0",
-    "unocss-preset-vuetify": "^0.2.1"
+    "unocss-preset-vuetify": "^0.2.1",
+    "vue-eslint-parser": "^10.4.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
