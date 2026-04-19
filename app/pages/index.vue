@@ -14,7 +14,7 @@
                 :key="v.code"
                 :locale="v.code"
             >
-                <button class="bg-emerald color-white h-40px cursor-pointer rounded border-none p-2">
+                <button class="bg-emerald color-white h-40px cursor-pointer rounded-sm border-none p-2">
                     {{ v.name }}
                 </button>
             </SwitchLocalePathLink>
@@ -47,7 +47,7 @@ definePageMeta({ name: 'index' });
 </script>
 
 <style scoped lang="scss">
-.add-count-btn{
-    @apply bg-blue-6 color-white h-40px cursor-pointer rounded border-none p-2
+.add-count-btn {
+    @apply bg-blue-6 color-white h-40px cursor-pointer rounded border-none p-2;
 }
 </style>
