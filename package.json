@@ -39,7 +39,7 @@
     "eslint": "^10.3.0",
     "eslint-plugin-better-tailwindcss": "^4.5.0",
     "eslint-plugin-format": "^2.0.1",
-    "h3": "2.0.1-rc.20",
+    "h3": "2.0.1-rc.22",
     "nitro-cloudflare-dev": "^0.2.2",
     "postcss-pxtorem": "^6.1.0",
     "sass-embedded": "^1.99.0",
@@ -47,6 +47,6 @@
     "tailwindcss": "^4.2.4",
     "unocss": "^66.6.8",
     "vue-eslint-parser": "^10.4.0",
-    "wrangler": "^4.85.0"
+    "wrangler": "^4.88.0"
   }
 }
