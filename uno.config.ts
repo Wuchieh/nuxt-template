@@ -95,7 +95,6 @@ export default defineConfig({
             }),
         ],
     ],
-    theme: { breakpoint },
     safelist: [
         'font-heading',
         'font-body',
@@ -112,6 +111,7 @@ export default defineConfig({
             '-shaped',
         ].map((suffix) => `rounded${suffix}`),
     ],
+    theme: { breakpoint },
     transformers: [
         transformerDirectives(),
         // transformerCompileClass(),
