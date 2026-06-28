@@ -48,6 +48,6 @@ definePageMeta({ name: 'index' });
 
 <style scoped lang="scss">
 .add-count-btn {
-    @apply bg-blue-6 color-white h-40px cursor-pointer rounded border-none p-2;
+    @apply bg-blue-600 color-white h-40px cursor-pointer rounded border-none p-2;
 }
 </style>
